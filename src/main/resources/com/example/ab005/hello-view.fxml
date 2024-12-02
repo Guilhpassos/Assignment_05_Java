@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ab005.HelloController">
+    <children>
+        <Label text="Player ID:" layoutX="20.0" layoutY="20.0" />
+        <TextField fx:id="playerIdField" layoutX="150.0" layoutY="20.0" />
+
+        <Label text="First Name:" layoutX="20.0" layoutY="60.0" />
+        <TextField fx:id="firstNameField" layoutX="150.0" layoutY="60.0" />
+
+        <Label text="Last Name:" layoutX="20.0" layoutY="100.0" />
+        <TextField fx:id="lastNameField" layoutX="150.0" layoutY="100.0" />
+
+        <Label text="Address:" layoutX="20.0" layoutY="140.0" />
+        <TextField fx:id="addressField" layoutX="150.0" layoutY="140.0" />
+
+        <Label text="Postal Code:" layoutX="20.0" layoutY="180.0" />
+        <TextField fx:id="postalCodeField" layoutX="150.0" layoutY="180.0" />
+
+        <Label text="Province:" layoutX="20.0" layoutY="220.0" />
+        <TextField fx:id="provinceField" layoutX="150.0" layoutY="220.0" />
+
+        <Label text="Phone Number:" layoutX="20.0" layoutY="260.0" />
+        <TextField fx:id="phoneNumberField" layoutX="150.0" layoutY="260.0" />
+
+        <Label text="Game ID:" layoutX="400.0" layoutY="20.0" />
+        <TextField fx:id="gameIdField" layoutX="530.0" layoutY="20.0" />
+
+        <Label text="Game Title:" layoutX="400.0" layoutY="60.0" />
+        <TextField fx:id="titleField" layoutX="530.0" layoutY="60.0" />
+
+        <Label text="Score:" layoutX="400.0" layoutY="100.0" />
+        <TextField fx:id="scoreField" layoutX="530.0" layoutY="100.0" />
+
+        <Label text="Playing Date (YYYY-MM-DD):" layoutX="400.0" layoutY="140.0" />
+        <TextField fx:id="playingDateField" layoutX="530.0" layoutY="140.0" />
+
+        <Button text="Insert" layoutX="150.0" layoutY="320.0" fx:id="insertButton" onAction="#onInsertButtonClick"/>
+        <Button text="Display" layoutX="230.0" layoutY="320.0" fx:id="displayButton" onAction="#onDisplayButtonClick"/>
+
+        <TableView fx:id="reportTable" layoutX="20.0" layoutY="380.0" prefWidth="740.0" prefHeight="200.0">
+            <columns>
+                <TableColumn fx:id="playerIdColumn" text="Player ID" prefWidth="100" />
+                <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="100" />
+                <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="100" />
+                <TableColumn fx:id="gameIdColumn" text="Game ID" prefWidth="100" />
+                <TableColumn fx:id="titleColumn" text="Game Title" prefWidth="150" />
+                <TableColumn fx:id="scoreColumn" text="Score" prefWidth="70" />
+                <TableColumn fx:id="playingDateColumn" text="Playing Date" prefWidth="120" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
